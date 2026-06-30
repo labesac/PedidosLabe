@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Data\\Proy_LABE\\022_VENTAS_WEB_MVC\\VentasWeb\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F29ACB8C-A2B2-4C29-87C1-203E73A13701}|VentasWeb\\VentasWeb.csproj|d:\\data\\proy_labe\\022_ventas_web_mvc\\ventasweb\\ventasweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F29ACB8C-A2B2-4C29-87C1-203E73A13701}|VentasWeb\\VentasWeb.csproj|solutionrelative:ventasweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\Data\\Proy_LABE\\022_VENTAS_WEB_MVC\\VentasWeb\\VentasWeb\\Web.config",
-              "RelativeDocumentMoniker": "VentasWeb\\Web.config",
-              "ToolTip": "D:\\Data\\Proy_LABE\\022_VENTAS_WEB_MVC\\VentasWeb\\VentasWeb\\Web.config",
-              "RelativeToolTip": "VentasWeb\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-06-25T19:35:58.501Z",
-              "EditorCaption": ""
             }
           ]
         }
