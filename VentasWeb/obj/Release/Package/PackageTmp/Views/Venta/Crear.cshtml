@@ -1,0 +1,1307 @@
+﻿
+@{
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    /* =========================================
+       TABLA RESPONSIVE VENTAS
+    ========================================= */
+
+    @@media (max-width: 768px) {
+
+        #tbVenta thead {
+            display: none;
+        }
+
+        #tbVenta,
+        #tbVenta tbody,
+        #tbVenta tr,
+        #tbVenta td {
+            display: block;
+            width: 100%;
+        }
+
+            #tbVenta tr {
+                background: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                margin-bottom: 12px;
+                padding: 10px;
+                box-shadow: 0 2px 5px rgba(0,0,0,.08);
+            }
+
+            #tbVenta td {
+                border: none !important;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 6px 8px;
+                text-align: right;
+            }
+
+                #tbVenta td::before {
+                    content: attr(data-label);
+                    font-weight: 600;
+                    text-align: left;
+                    margin-right: 10px;
+                    color: #555;
+                }
+
+                #tbVenta td:first-child {
+                    justify-content: center;
+                }
+
+                    #tbVenta td:first-child::before {
+                        content: "";
+                    }
+    }
+
+    /* =========================================
+        RESUMEN POS LIMPIO
+    ========================================= */
+
+    .resumen-totales {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* fila principal */
+    .resumen-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    /* label */
+    .resumen-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #555;
+    }
+
+    /* grupo input */
+    .resumen-input-group {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    /* input base */
+    .resumen-input {
+        width: 110px;
+        text-align: right;
+        font-weight: 600;
+        padding: 4px 6px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+    }
+
+    /* =========================
+       🟡 AMARILLO (cálculos)
+    ========================= */
+
+    .resumen-amarillo .resumen-label {
+        color: #8a6d00;
+    }
+
+    .resumen-amarillo .resumen-input {
+        background: #fff8d6;
+        border: 1px solid #ffe58f;
+        color: #8a6d00;
+    }
+
+    /* =========================
+       🟡 CELESTE (cálculos)
+    ========================= */
+
+    .resumen-celeste .resumen-label {
+        color: #0d6efd;
+    }
+
+    .resumen-celeste .resumen-input {
+        background: #e7f1ff;
+        border: 1px solid #b6d4fe;
+        color: #0d6efd;
+    }
+
+    /* =========================
+       🟢 VERDE (TOTAL)
+    ========================= */
+
+    .resumen-verde .resumen-label {
+        color: #1e7e34;
+        font-weight: 700;
+    }
+
+    .resumen-verde .resumen-input {
+        background: #e7f8ee;
+        border: 1px solid #7ad7a6;
+        color: #1e7e34;
+        font-weight: 700;
+    }
+
+    /* =========================
+       PAGO FINAL
+    ========================= */
+
+    .pago-final {
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    .pago-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .pago-item label {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+    /* input box editable */
+    .input-box {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 4px 8px;
+        background: #fff;
+    }
+
+        .input-box span {
+            margin-right: 6px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .input-box.editable {
+            border: 1px solid #4da3ff;
+            background: #f0f7ff;
+        }
+
+            .input-box.editable input {
+                border: none;
+                outline: none;
+                width: 100%;
+                text-align: right;
+                background: transparent;
+                font-weight: 600;
+            }
+
+    .btn-final button {
+        height: 38px;
+        padding: 0 15px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+    }
+
+    /* =====================================
+       SWITCH CARD MODERNO
+    ===================================== */
+
+    .switch-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        background: #fff;
+        border: 1px solid #e9ecef;
+        border-radius: 16px;
+        padding: 14px 18px;
+        box-shadow: 0 2px 10px rgba(0,0,0,.05);
+        transition: all .2s ease;
+    }
+
+        .switch-card:hover {
+            border-color: #0d6efd;
+            box-shadow: 0 4px 16px rgba(13,110,253,.12);
+        }
+
+    .switch-info {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 0;
+    }
+
+    .switch-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: rgba(13,110,253,.10);
+        color: #0d6efd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .switch-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #212529;
+        line-height: 1.2;
+    }
+
+    .switch-subtitle {
+        font-size: 13px;
+        color: #6c757d;
+        margin-top: 2px;
+    }
+
+    .switch-container {
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .switch-container .form-check-input {
+            width: 3rem;
+            height: 1.5rem;
+            cursor: pointer;
+        }
+
+    /* =====================================
+       MOBILE
+    ===================================== */
+
+    @@media (max-width: 576px) {
+
+        .switch-card {
+            padding: 12px 14px;
+        }
+
+        .switch-title {
+            font-size: 14px;
+        }
+
+        .switch-subtitle {
+            font-size: 12px;
+        }
+
+        .switch-icon {
+            width: 38px;
+            height: 38px;
+            font-size: 16px;
+        }
+    }
+
+    /* ======================================
+       TABLA MODERNA PRODUCTOS
+    ====================================== */
+
+    .tabla-producto-container {
+        background: #fff;
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid #edf0f2;
+        box-shadow: 0 4px 14px rgba(0,0,0,.04);
+    }
+
+    #tbProducto thead th {
+        border: none !important;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        color: #6c757d;
+        background: #f8f9fa !important;
+    }
+
+    #tbProducto tbody tr {
+        transition: all .15s ease;
+    }
+
+        #tbProducto tbody tr:hover {
+            background: #f8fbff !important;
+            transform: scale(1.002);
+        }
+
+    #tbProducto tbody td {
+        vertical-align: middle;
+        border-color: #f1f3f5;
+        font-size: 14px;
+    }
+
+    /* BOTON SELECCIONAR */
+
+    #tbProducto .btn-primary {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* MOBILE */
+
+    @@media (max-width: 768px) {
+
+        .switch-precio-container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        #tbProducto {
+            min-width: 650px;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card border-secondary">
+            <div class="card-header p-2 bg-secondary text-white">
+                Venta >> Registrar Venta
+            </div>
+            <div class="card-body p-2 card-venta">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="input-group input-group-sm mb-2">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text bg-secondary text-white" for="inputGroupSelect01">Tipo Documento</label>
+                            </div>
+                            <select class="custom-select" id="cboventatipodocumento">
+                                <option value="Nota de Venta" selected>Nota de Venta</option>
+                                <option value="Boleta">Boleta</option>
+                                <option value="Factura">Factura</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="input-group input-group-sm mb-2">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text bg-secondary text-white" for="inputGroupSelect01">Fecha de Venta</label>
+                            </div>
+                            <input id="txtfechaventa" readonly type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="input-group input-group-sm mb-2">
+
+                            <div class="input-group-prepend">
+                                <label class="input-group-text bg-secondary text-white">
+                                    Método Pago
+                                </label>
+                            </div>
+
+                            <select class="custom-select" id="cboMetodoPago">
+                                <option value="EFECTIVO" selected>EFECTIVO</option>
+                                <option value="TARJETA">TARJETA</option>
+                                <option value="YAPE">YAPE</option>
+                                <option value="PLIN">PLIN</option>
+                                <option value="TRANSFERENCIA">TRANSFERENCIA</option>
+                                <option value="OTROS">OTROS</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIENDA / EMPLEADO -->
+                <div class="row d-none">
+                    <div class="col-sm-6">
+                        <div class="card bg-secondary text-white border-secondary">
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <h6 class="card-title mb-1">Tienda origen</h6>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="float-right">
+                                            <a class="btn btn-light btn-sm" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row collapse" id="collapse1">
+                                    <input id="txtIdTienda" type="hidden" value="0" />
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-0">
+                                            <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Nombre:</label>
+                                            <label class="form-control form-control-sm model mb-1" readonly id="lbltiendanombre"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-0">
+                                            <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">RUC:</label>
+                                            <label class="form-control form-control-sm model mb-1" readonly id="lbltiendaruc"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-0">
+                                            <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Direccion:</label>
+                                            <label class="form-control form-control-sm model mb-1" readonly id="lbltiendadireccion"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card bg-secondary text-white border-secondary">
+                            <div class="card-body p-2">
+
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <h6 class="card-title mb-1">Datos Empleado</h6>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="float-right">
+                                            <a class="btn btn-light btn-sm" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row collapse" id="collapse2">
+                                    <input id="txtIdUsuario" type="hidden" value="0" />
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-0">
+                                            <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Nombre:</label>
+                                            <label class="form-control form-control-sm model mb-1" readonly id="lblempleadonombre"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-0">
+                                            <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Apellido:</label>
+                                            <label class="form-control form-control-sm model mb-1" readonly id="lblempleadoapellido"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-0">
+                                            <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Correo:</label>
+                                            <label class="form-control form-control-sm model mb-1" readonly id="lblempleadocorreo"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CLIENTE / PRODUCTO -->
+                <div class="row mt-2">
+
+                    <!-- CLIENTE -->
+                    <div class="col-sm-12">
+
+                        <div class="card border-secondary">
+
+                            <div class="card-body p-2">
+
+                                <h6 class="text-secondary mb-3">
+                                    <i class="fa fa-user mr-1"></i>
+                                    Detalle cliente
+                                </h6>
+
+                                <div class="row align-items-end">
+
+                                    <div class="col-sm-3">
+                                        <label class="col-form-label col-form-label-sm">
+                                            Documento:
+                                            <span class="required">*</span>
+                                        </label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text"
+                                                   class="form-control model"
+                                                   id="txtclientedocumento"
+                                                   autocomplete="off"
+                                                   readonly>
+
+                                            <button type="button"
+                                                    id="btnBuscarCliente"
+                                                    class="btn btn-primary"
+                                                    style="
+                                                border-top-left-radius:0;
+                                                border-bottom-left-radius:0;
+                                                padding:0 10px;
+                                                font-size:16px;
+                                                line-height:1;
+                                            ">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-2 d-none">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Tipo :
+                                            </label>
+
+                                            <select class="form-control form-control-sm model"
+                                                    id="cboclientetipodocumento" disabled>
+
+                                                <option value="DNI">DNI</option>
+                                                <option value="RUC">RUC</option>
+
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-9">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Nombres:
+                                                <span class="required">*</span>
+                                            </label>
+
+                                            <input type="text"
+                                                   class="form-control form-control-sm model"
+                                                   id="txtclientenombres"
+                                                   autocomplete="off"
+                                                   readonly>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-2 d-none">
+
+                                    <div class="col-sm-6">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Direccion:
+                                            </label>
+
+                                            <input type="text"
+                                                   class="form-control form-control-sm model"
+                                                   id="txtclientedireccion"
+                                                   autocomplete="off">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Telefono:
+                                            </label>
+
+                                            <input type="text"
+                                                   class="form-control form-control-sm model"
+                                                   id="txtclientetelefono"
+                                                   autocomplete="off">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCTO -->
+                    <div class="col-sm-12">
+
+                        <div class="card border-secondary">
+
+                            <div class="card-body p-2">
+
+                                <h6 class="text-secondary mb-3">
+                                    <i class="fa fa-box mr-1"></i>
+                                    Detalle Producto
+                                </h6>
+
+                                <div class="row align-items-end">
+
+                                    <input id="txtIdProducto"
+                                           type="hidden"
+                                           value="0" />
+
+                                    <div class="col-sm-3">
+
+                                        <label class="col-form-label col-form-label-sm">
+                                            Codigo:
+                                            <span class="required">*</span>
+                                        </label>
+
+                                        <div class="input-group input-group-sm">
+
+                                            <input type="text"
+                                                   class="form-control model"
+                                                   id="txtproductocodigo"
+                                                   autocomplete="off">
+
+                                            <button type="button"
+                                                    id="btnBuscarProducto"
+                                                    class="btn btn-primary"
+                                                    style="
+                                                    border-top-left-radius:0;
+                                                    border-bottom-left-radius:0;
+                                                    padding:0 10px;
+                                                    font-size:16px;
+                                                    line-height:1;
+                                                ">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-9">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Nombre:
+                                            </label>
+
+                                            <input type="text"
+                                                   class="form-control form-control-sm model"
+                                                   readonly
+                                                   id="txtproductonombre">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 d-none">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Descripcion:
+                                            </label>
+
+                                            <input type="text"
+                                                   class="form-control form-control-sm model"
+                                                   readonly
+                                                   id="txtproductodescripcion">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-2">
+                                    <div class="col-sm-1">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                En Stock:
+                                            </label>
+
+                                            <input type="text"
+                                                   class="form-control form-control-sm model"
+                                                   readonly
+                                                   id="txtproductostock">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-1">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Precio:
+                                            </label>
+
+                                            <input type="text"
+                                                   class="form-control form-control-sm model"
+                                                   readonly
+                                                   id="txtproductoprecio">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-1">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="col-form-label col-form-label-sm">
+                                                Cantidad:
+                                                <span class="required">*</span>
+                                            </label>
+
+                                            <input type="number"
+                                                   class="form-control form-control-sm model"
+                                                   id="txtproductocantidad"
+                                                   autocomplete="off"
+                                                   min="1"
+                                                   value="1">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-9">
+
+                                        <div class="form-group mb-0">
+
+                                            <label class="invisible">
+                                                agregar
+                                            </label>
+
+                                            <button id="btnAgregar"
+                                                    type="button"
+                                                    class="btn btn-outline-success btn-sm btn-block">
+
+                                                <i class="fa fa-plus"></i>
+                                                Agregar
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr />
+                <div class="row">
+                    <div class="col-sm-12"><h6 class="text-secondary">Detalle Productos</h6></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-12">
+                        <div class="table-responsive-sm">
+                            <table id="tbVenta" class="table table-striped table-bordered nowrap table-sm" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Cantidad</th>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                        <th>Importe Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr />
+                <!-- =========================================
+                     RESUMEN VENTA
+                ========================================= -->
+                <div class="col-lg-12 d-flex justify-content-end">
+
+                    <div class="resumen-totales">
+
+                        <!-- SUBTOTAL -->
+                        <div class="resumen-item resumen-amarillo">
+                            <div class="resumen-row">
+                                <div class="resumen-label">Sub Total</div>
+                                <div class="resumen-input-group">
+                                    <span>S/</span>
+                                    <input id="txtsubtotal" class="resumen-input" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DESCUENTO % -->
+                        <div class="resumen-item resumen-celeste">
+                            <div class="resumen-row">
+                                <div class="resumen-label">Descuento</div>
+                                <div class="resumen-input-group">
+                                    <span>%</span>
+                                    <input id="txtdescuentoporcentaje" class="resumen-input" value="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DESCUENTO MONTO -->
+                        <div class="resumen-item resumen-amarillo">
+                            <div class="resumen-row">
+                                <div class="resumen-label">Descuento Monto</div>
+                                <div class="resumen-input-group">
+                                    <span>S/</span>
+                                    <input id="txtdescuentomonto" class="resumen-input" readonly value="0.00">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IGV -->
+                        <div class="resumen-item resumen-amarillo">
+                            <div class="resumen-row">
+                                <div class="resumen-label">IGV</div>
+                                <div class="resumen-input-group">
+                                    <span>S/</span>
+                                    <input id="txtigv" class="resumen-input" readonly value="0.00">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TOTAL -->
+                        <div class="resumen-item resumen-verde resumen-total">
+                            <div class="resumen-row">
+                                <div class="resumen-label">TOTAL</div>
+                                <div class="resumen-input-group">
+                                    <span>S/</span>
+                                    <input id="txttotal" class="resumen-input" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================================
+                     PAGO FINAL
+                ========================================= -->
+                <div class="col-lg-12 d-flex justify-content-end">
+
+                    <div class="pago-final">
+                        <!-- PAGO -->
+                        <div class="pago-item">
+                            <label>Pago</label>
+
+                            <div class="input-box editable">
+                                <span>S/.</span>
+                                <input id="txtmontopago" type="text">
+                            </div>
+                        </div>
+
+                        <!-- CAMBIO -->
+                        <div class="pago-item">
+                            <label>Cambio</label>
+
+                            <div class="input-box editable">
+                                <span>S/.</span>
+                                <input id="txtcambio" readonly value="0.00">
+                            </div>
+                        </div>
+
+                        <!-- BOTÓN -->
+                        <div class="pago-item btn-final">
+                            <button id="btnTerminarGuardarVenta"
+                                    class="btn btn-success btn-lg btn-block">
+                                <i class="fa fa-print mr-2"></i>
+                                FINALIZAR VENTA
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- MODAL PRODUCTOS -->
+<div class="modal fade"
+     id="modalProducto"
+     tabindex="-1"
+     role="dialog"
+     data-backdrop="static"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-lg"
+         role="document">
+
+        <div class="modal-content border-0 shadow-lg">
+
+            <div class="modal-header bg-secondary text-white">
+
+                <h5 class="modal-title">
+                    <i class="fa fa-box mr-1"></i>
+                    Productos
+                </h5>
+
+                <button type="button"
+                        class="close text-white"
+                        data-dismiss="modal">
+
+                    <span>&times;</span>
+
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <!-- SWITCH MODERNO -->
+                <div class="row mb-3">
+
+                    <div class="col-12">
+
+                        <div class="switch-card">
+
+                            <div class="switch-info">
+
+                                <div class="switch-icon">
+                                    <i class="fa fa-box-open"></i>
+                                </div>
+
+                                <div>
+                                    <div class="switch-title">
+                                        Precio por Catálogo
+                                    </div>
+
+                                    <div class="switch-subtitle">
+                                        Activar precio especial de catálogo
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-check form-switch switch-container">
+
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       id="chkpreciopaquete">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- TABLA -->
+                <div class="table-responsive tabla-producto-container">
+
+                    <table id="tbProducto"
+                           class="table align-middle table-hover mb-0"
+                           style="width:100%">
+
+                        <thead class="table-light">
+
+                            <tr>
+                                <th class="text-center" style="width:70px"></th>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th class="text-center">Stock</th>
+                                <th class="text-right">Precio</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody></tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MODAL CLIENTES -->
+<div class="modal fade" id="modalCliente" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-secondary text-white">
+                <h5 class="modal-title">Clientes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table id="tbcliente" class="table table-striped table-bordered nowrap compact" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Tipo Documento</th>
+                                <th>Numero Documento</th>
+                                <th>Nombres</th>
+                                <th>Direccion</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="@Url.Content("~/Scripts/Views/Venta_Crear.js")" type="text/javascript"></script>
+
+    <script>
+
+        // =========================================
+        // RECALCULAR VENTA
+        // =========================================
+
+        function recalcularVenta() {
+
+            let total = 0;
+
+            $("#tbVenta tbody tr").each(function () {
+
+                let fila = $(this);
+
+                let importeTexto = fila
+                    .find(".importetotal")
+                    .text()
+                    .trim();
+
+                importeTexto = importeTexto
+                    .replace("S/", "")
+                    .replace(",", "");
+
+                let importe =
+                    parseFloat(importeTexto) || 0;
+
+                total += importe;
+
+            });
+
+            // ============================
+            // DESCUENTO
+            // ============================
+
+            let porcDesc =
+                parseFloat($("#txtdescuentoporcentaje").val()) || 0;
+
+            let montoDesc =
+                (total * porcDesc) / 100;
+
+            let base =
+                total - montoDesc;
+
+            // ============================
+            // IGV (18%)
+            // ============================
+
+            let subtotal = base / 1.18;
+
+            let igv = base - subtotal;
+
+            let totalFinal = base;
+
+            // ============================
+            // SET VALORES
+            // ============================
+
+            $("#txtsubtotal").val(subtotal.toFixed(2));
+            $("#txtigv").val(igv.toFixed(2));
+            $("#txttotal").val(totalFinal.toFixed(2));
+            $("#txtdescuentomonto").val(montoDesc.toFixed(2));
+
+            recalcularCambio();
+        }
+
+        // =========================================
+        // RECALCULAR CAMBIO
+        // =========================================
+
+        function recalcularCambio() {
+
+            let total =
+                parseFloat(
+                    $("#txttotal").val()
+                ) || 0;
+
+            let montoPago =
+                parseFloat(
+                    $("#txtmontopago").val()
+                ) || 0;
+
+            let cambio =
+                montoPago - total;
+
+            $("#txtcambio").val(
+
+                cambio >= 0
+                    ? cambio.toFixed(2)
+                    : "0.00"
+
+            );
+        }
+
+        // =========================================
+        // MONTO PAGO
+        // =========================================
+
+        $(document).on(
+            "keyup change",
+            "#txtmontopago",
+            function () {
+
+                recalcularCambio();
+
+            });
+
+        // =========================================
+        // BOTON CALCULAR
+        // =========================================
+
+        $(document).on(
+            "click",
+            "#btncalcular",
+            function () {
+
+                recalcularCambio();
+
+            });
+
+        // =========================================
+        // ELIMINAR PRODUCTO
+        // =========================================
+
+        $(document).on(
+            "click",
+            ".btn-eliminar",
+            function () {
+
+                $(this)
+                    .closest("tr")
+                    .remove();
+
+                recalcularVenta();
+
+            });
+
+        // =========================================
+        // CAMBIAR CANTIDAD
+        // =========================================
+
+        $(document).on(
+            "input",
+            ".txtcantidad",
+            function () {
+
+                let fila =
+                    $(this).closest("tr");
+
+                let cantidad =
+                    parseFloat(
+                        $(this).val()
+                    ) || 0;
+
+                // =========================
+                // OBTENER PRECIO
+                // =========================
+
+                let precioTexto =
+                    fila.find(".precio-unitario")
+                        .text()
+                        .trim();
+
+                precioTexto = precioTexto
+                    .replace("S/", "")
+                    .replace(",", "");
+
+                let precio =
+                    parseFloat(precioTexto) || 0;
+
+                // =========================
+                // NUEVO IMPORTE
+                // =========================
+
+                let nuevoImporte =
+                    cantidad * precio;
+
+                fila.find(".importetotal")
+                    .text(
+                        nuevoImporte.toFixed(2)
+                    );
+
+                recalcularVenta();
+
+            });
+
+        // =========================================
+        // AGREGAR PRODUCTO
+        // =========================================
+
+        $(document).on(
+            "click",
+            "#btnAgregar",
+            function () {
+
+                // Esperar JS original
+
+                setTimeout(function () {
+
+                    recalcularVenta();
+
+                }, 200);
+
+            });
+
+        // =========================================
+        // AGREGAR porcentaje
+        // =========================================
+
+        $(document).on(
+            "input",
+            "#txtdescuentoporcentaje",
+            function () {
+
+                recalcularVenta();
+
+            }
+        );
+
+        // =========================================
+        // INICIAL
+        // =========================================
+
+        $(document).ready(function () {
+
+            recalcularVenta();
+
+        });
+
+    </script>
+}

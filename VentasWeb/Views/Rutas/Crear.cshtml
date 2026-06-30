@@ -1,0 +1,358 @@
+﻿@{
+    ViewBag.Title = "Rutas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    .card-ruta {
+        border-radius: 14px;
+        border: 1px solid #e5e5e5;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .seccion-titulo {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .tarjeta-direccion {
+        transition: .2s;
+        border-radius: 12px;
+        background: #fff;
+        border: 1px solid #ececec;
+    }
+
+        .tarjeta-direccion:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(0,0,0,.08);
+        }
+
+        .tarjeta-direccion .card-body {
+            font-size: 13px;
+        }
+
+    .border-success {
+        border: 2px solid #28a745 !important;
+    }
+</style>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header p-2 bg-secondary text-white d-flex justify-content-between align-items-center">
+                <span>Crear Ruta</span>
+
+                <button type="button"
+                        class="btn btn-light btn-sm"
+                        onclick="retornarListado()">
+
+                    <i class="fas fa-arrow-left"></i> Retornar
+                </button>
+            </div>
+
+            <div class="card-body p-4">
+
+                <!-- =========================================
+        DATOS RUTA
+    ========================================== -->
+
+                <div class="mb-4">
+
+                    <div class="d-flex align-items-center mb-3">
+
+                        <div class="bg-primary text-white rounded-circle d-flex
+                        align-items-center justify-content-center mr-2"
+                             style="width:40px;height:40px;">
+
+                            <i class="fas fa-route"></i>
+
+                        </div>
+
+                        <div>
+
+                            <div class="font-weight-bold"
+                                 style="font-size:18px;">
+
+                                Información de Ruta
+
+                            </div>
+
+                            <div class="text-muted small">
+
+                                Complete los datos principales
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4 mb-3">
+
+                            <label class="font-weight-bold small text-muted">
+
+                                Nombre Ruta
+
+                            </label>
+
+                            <div class="input-group">
+
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text bg-white">
+
+                                        <i class="fas fa-road text-primary"></i>
+
+                                    </span>
+
+                                </div>
+
+                                <input type="text"
+                                       id="txtNombre"
+                                       class="form-control border-left-0"
+                                       placeholder="Ingrese nombre..." />
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+
+                            <label class="font-weight-bold small text-muted">
+
+                                Zona
+
+                            </label>
+
+                            <div class="input-group">
+
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text bg-white">
+
+                                        <i class="fas fa-map-marker-alt text-danger"></i>
+
+                                    </span>
+
+                                </div>
+
+                                <input type="text"
+                                       id="txtZona"
+                                       class="form-control border-left-0"
+                                       placeholder="Zona..." />
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-2 mb-3">
+
+                            <label class="font-weight-bold small text-muted">
+
+                                Prioridad
+
+                            </label>
+
+                            <select id="cboPrioridad"
+                                    class="form-control">
+
+                                <option value="Alta">Alta</option>
+                                <option value="Media" selected>Media</option>
+                                <option value="Baja">Baja</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-2 mb-3">
+
+                            <label class="font-weight-bold small text-muted">
+
+                                Fecha
+
+                            </label>
+
+                            <input type="date"
+                                   id="txtFecha"
+                                   class="form-control" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+        VENDEDOR
+    ========================================== -->
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="font-weight-bold small text-muted">
+
+                            Vendedor
+
+                        </label>
+
+                        <div class="input-group">
+
+                            <div class="input-group-prepend">
+
+                                <span class="input-group-text bg-white">
+
+                                    <i class="fas fa-user-tie text-success"></i>
+
+                                </span>
+
+                            </div>
+
+                            <select id="cboVendedor"
+                                    class="form-control border-left-0">
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 mb-2">
+
+                        <label class="font-weight-bold small text-muted">
+
+                            Descripción
+
+                        </label>
+
+                        <textarea id="txtDescripcion"
+                                  class="form-control"
+                                  rows="3"
+                                  placeholder="Descripción de la ruta..."></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                    CLIENTES
+                ========================================== -->
+
+                <div class="mt-4">
+
+                    <div class="text-right mt-4">
+
+                        <button class="btn btn-success shadow-sm rounded-pill px-3"
+                                id="btnAgregarCliente">
+
+                            <i class="fas fa-user-plus mr-1"></i>
+
+                            Agregar Cliente
+
+                        </button>
+
+                    </div>
+                    <hr />
+                    <div class="row"
+                         id="contenedorDetalleRuta">
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                    FOOTER
+                ========================================== -->
+
+                <div class="text-right mt-4">
+
+                    <button class="btn btn-primary px-4 shadow-sm rounded-pill"
+                            id="btnGuardarRuta">
+
+                        <i class="fas fa-save mr-1"></i>
+
+                        Guardar Ruta
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- MODAL CLIENTES -->
+
+<div class="modal fade"
+     id="modalCliente"
+     tabindex="-1"
+     role="dialog"
+     data-backdrop="static"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-md"
+         role="document">
+
+        <div class="modal-content border-0 shadow-lg">
+
+            <div class="modal-header bg-secondary text-white">
+
+                <h5 class="modal-title">
+
+                    <i class="fa fa-users mr-1"></i>
+                    Clientes
+
+                </h5>
+
+                <button type="button"
+                        class="close text-white"
+                        data-dismiss="modal">
+
+                    <span>&times;</span>
+
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row mb-3">
+
+                    <div class="col-md-12">
+
+                        <input type="text"
+                               id="txtBuscarCliente"
+                               class="form-control"
+                               placeholder="Buscar cliente por nombre, documento o dirección..." />
+
+                    </div>
+
+                </div>
+
+                <div class="row"
+                     id="contenedorClientes">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+@section scripts{
+
+    <script src="@Url.Content("~/Scripts/Views/Rutas_Crear.js")"
+            type="text/javascript"></script>
+
+}

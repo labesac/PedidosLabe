@@ -1,0 +1,612 @@
+﻿@using VentasWeb.Helpers
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LABE PERU SAC</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/PluginsCSS")
+
+<style>
+
+    body {
+        overflow-x: hidden;
+        background-color: #f5f7fb;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* =========================================
+       SIDEBAR
+    ==========================================*/
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 220px;
+        height: 100vh;
+        background: #112240;
+        padding-top: 20px;
+        z-index: 1000;
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+
+    .sidebar-hide {
+        margin-left: -260px;
+    }
+
+    /* =========================================
+       LOGO
+    ==========================================*/
+
+    .logo-container {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .logo-navbar {
+        height: 55px;
+        width: 190px;
+        object-fit: contain;
+        padding: 8px 18px;
+        border-radius: 16px;
+        background: #fff;
+        border: 1px solid #e9e9e9;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+        .logo-navbar:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+
+        .logo-navbar:hover {
+            transform: scale(1.03);
+        }
+
+    /* =========================================
+       MENU
+    ==========================================*/
+
+    .sidebar .nav-link {
+        color: rgba(255,255,255,0.75) !important;
+        padding: 13px 20px;
+        margin: 4px 12px;
+        border-radius: 8px;
+        transition: all .2s ease;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+    }
+
+        .sidebar .nav-link i {
+            font-size: 15px;
+            min-width: 18px;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #1d3557;
+            color: #ffffff !important;
+        }
+
+    .sidebar .active > .nav-link {
+        background-color: #2b4c7e;
+        color: white !important;
+        font-weight: 600;
+    }
+
+    /* =========================================
+       SUBMENU
+    ==========================================*/
+
+    .sidebar .dropdown-menu {
+        display: none;
+        position: relative !important;
+        transform: none !important;
+        top: 0 !important;
+        left: 0 !important;
+        float: none;
+        width: calc(100% - 24px);
+        margin-left: 12px;
+        margin-top: 4px;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 2px 0 2px 10px;
+    }
+
+    .sidebar .dropdown-item {
+        color: rgba(255,255,255,0.68);
+        padding: 10px 16px;
+        transition: 0.2s;
+        font-size: 13px;
+        display: block;
+        text-decoration: none;
+        border-radius: 6px;
+        margin: 2px 0;
+    }
+
+        .sidebar .dropdown-item:hover {
+            background-color: #1d3557;
+            color: white;
+        }
+
+    /* =========================================
+       TOPBAR
+    ==========================================*/
+
+    .topbar {
+        position: fixed;
+        top: 0;
+        left: 260px;
+        right: 0;
+        height: 70px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        border-bottom: 1px solid #e9edf5;
+        z-index: 999;
+        transition: 0.3s;
+    }
+
+    .topbar-full {
+        left: 0 !important;
+    }
+
+    .topbar-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1f2937;
+    }
+
+    /* =========================================
+       BOTONES
+    ==========================================*/
+
+    #btnToggleSidebar {
+        background: white;
+        border: 1px solid #dbe2ea;
+        color: #112240;
+        border-radius: 8px;
+        width: 42px;
+        height: 42px;
+    }
+
+        #btnToggleSidebar:hover {
+            background-color: #f4f6fa;
+        }
+
+    .btn-outline-primary {
+        border-color: #2b4c7e;
+        color: #2b4c7e;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #2b4c7e;
+            border-color: #2b4c7e;
+            color: white;
+        }
+
+    /* =========================================
+       CONTENT
+    ==========================================*/
+
+    .main-content {
+        margin-left: 260px;
+        margin-top: 70px;
+        padding: 25px;
+        transition: 0.3s;
+    }
+
+    .content-full {
+        margin-left: 0 !important;
+    }
+
+    footer {
+        margin-top: 30px;
+        color: #7b8794;
+        font-size: 14px;
+    }
+
+    /* =========================================
+       SCROLL
+    ==========================================*/
+
+    .sidebar::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,.15);
+        border-radius: 10px;
+    }
+
+    /* =========================================
+       RESPONSIVE
+    ==========================================*/
+
+    @@media(max-width:768px) {
+
+        .sidebar {
+            margin-left: -260px;
+            z-index: 2000;
+        }
+
+        .sidebar-show {
+            margin-left: 0 !important;
+        }
+
+        .topbar {
+            left: 0;
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .main-content {
+            margin-left: 0;
+            padding: 15px;
+        }
+    }
+</style>
+
+    @RenderSection("estilos", required: false)
+
+</head>
+<body>
+
+    <!-- =========================================
+         SIDEBAR
+    ==========================================-->
+
+    <div class="sidebar">
+
+        <div class="logo-container">
+            <img src="@Url.Content("~/Imagenes/labeperu.jpg")"
+                 class="logo-navbar"
+                 alt="logo" />
+        </div>
+
+        <ul class="nav flex-column navbar-nav">
+            @if (Session["Rol"] != null && Session["Rol"].ToString() == "ADMINISTRADOR")
+            {
+                <li class="nav-item">
+                    <a class="nav-link"
+                       name="Dashboard"
+                       href="@Url.Action("Dashboard", "Home")">
+
+                        <i class="fas fa-home"></i>
+                        Dashboard
+
+                    </a>
+                </li>
+            }
+
+            @Html.ActionLinkAllow()
+
+        </ul>
+
+    </div>
+
+    <!-- =========================================
+         TOPBAR
+    ==========================================-->
+
+    <div class="topbar">
+
+        <div class="d-flex align-items-center">
+
+            <button id="btnToggleSidebar"
+                    class="btn btn-light border mr-3">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+
+        </div>
+
+        <div>
+
+            <a href="@Url.Action("Salir", "Home")"
+               class="btn btn-outline-primary">
+
+                <i class="fas fa-sign-out-alt"></i>
+                Cerrar Sesión
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- =========================================
+         CONTENT
+    ==========================================-->
+
+    <div class="main-content">
+
+        @RenderBody()
+
+        <hr />
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Labe Peru S.A.C.</p>
+        </footer>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Content/PluginsJS")
+
+    <!-- =========================================
+         URLS
+    ==========================================-->
+
+<script>
+
+            $.extend({
+                MisUrls: {
+                    url: {},
+                    urls: function (a) {
+                        $.extend($.MisUrls.url, a);
+                    }
+                }
+            });
+
+            $.MisUrls.urls({ _ObtenerRoles: '@Url.Action("Obtener", "Rol")' });
+            $.MisUrls.urls({ _GuardarRol: '@Url.Action("Guardar", "Rol")' });
+            $.MisUrls.urls({ _EliminarRol: '@Url.Action("Eliminar", "Rol")' });
+
+            $.MisUrls.urls({ _ObtenerPermisos: '@Url.Action("Obtener", "Permisos")' });
+            $.MisUrls.urls({ _GuardarPermisos: '@Url.Action("Guardar", "Permisos")' });
+
+            $.MisUrls.urls({ _ObtenerUsuarios: '@Url.Action("Obtener", "Usuario")' });
+            $.MisUrls.urls({ _ObtenerUsuariosClave: '@Url.Action("ObtenerUsuarioKey", "Usuario")' });
+            $.MisUrls.urls({ _GuardarUsuario: '@Url.Action("Guardar", "Usuario")' });
+            $.MisUrls.urls({ _GuardarUsuarioClave: '@Url.Action("GuardarClave", "Usuario")' });
+            $.MisUrls.urls({ _EliminarUsuario: '@Url.Action("Eliminar", "Usuario")' });
+            $.MisUrls.urls({ _ObtenerUsuarioVentas: '@Url.Action("ObtenerUsuarioVentas", "Rutas")' });
+
+            $.MisUrls.urls({ _ObtenerProveedores: '@Url.Action("Obtener", "Proveedor")' });
+            $.MisUrls.urls({ _GuardarProveedor: '@Url.Action("Guardar", "Proveedor")' });
+            $.MisUrls.urls({ _EliminarProveedor: '@Url.Action("Eliminar", "Proveedor")' });
+
+            $.MisUrls.urls({ _ObtenerCategorias: '@Url.Action("Obtener", "Categoria")' });
+            $.MisUrls.urls({ _GuardarCategoria: '@Url.Action("Guardar", "Categoria")' });
+            $.MisUrls.urls({ _EliminarCategoria: '@Url.Action("Eliminar", "Categoria")' });
+
+            $.MisUrls.urls({ _GuardarTienda: '@Url.Action("Guardar", "Tienda")' });
+            $.MisUrls.urls({ _ObtenerTiendas: '@Url.Action("Obtener", "Tienda")' });
+
+            $.MisUrls.urls({ _ObtenerProductos: '@Url.Action("Obtener", "Producto")' });
+            $.MisUrls.urls({ _ObtenerProductosPorAsignar: '@Url.Action("ObtenerPorAsignar", "Producto")' });
+            $.MisUrls.urls({ _ObtenerProductosPorTienda: '@Url.Action("ObtenerPorTienda", "Producto")' });
+            $.MisUrls.urls({ _ObtenerAsignaciones: '@Url.Action("ObtenerAsignaciones", "Producto")' });
+            $.MisUrls.urls({ _RegistrarProductoTienda: '@Url.Action("RegistrarProductoTienda", "Producto")' });
+            $.MisUrls.urls({ _ObtenerProductoStockPorTienda: '@Url.Action("ObtenerStockPorTienda", "Producto")' });
+            $.MisUrls.urls({ _ObtenerProductoStockPorTiendaCatalogo: '@Url.Action("ObtenerStockPorTiendaCatalogo", "Producto")' });
+            $.MisUrls.urls({ _ObtenerProductoStockPorTiendaCodigo: '@Url.Action("ObtenerStockPorTiendaCodigo", "Producto")' });
+            $.MisUrls.urls({ _ObtenerProductoKardex: '@Url.Action("ObtenerReporteKardex", "Producto")' });
+            $.MisUrls.urls({ _ActualizarPrecioCatalogo: '@Url.Action("ActualizarPrecioCatalogo", "Producto")' });
+            $.MisUrls.urls({ _ActualizarPrecioGeneral: '@Url.Action("ActualizarPrecioGeneral", "Producto")' });
+            $.MisUrls.urls({ _GuardarProducto: '@Url.Action("Guardar", "Producto")' });
+            $.MisUrls.urls({ _EliminarProducto: '@Url.Action("Eliminar", "Producto")' });
+
+            $.MisUrls.urls({ _GuardarCompra: '@Url.Action("Guardar", "Compra")' });
+            $.MisUrls.urls({ _ObtenerCompras: '@Url.Action("Obtener", "Compra")' });
+            $.MisUrls.urls({ _DocumentoCompra: '@Url.Action("Documento", "Compra")' });
+
+            $.MisUrls.urls({ _ObtenerVentas: '@Url.Action("Obtener", "Venta")' });
+            $.MisUrls.urls({ _ObtenerUsuarioVenta: '@Url.Action("ObtenerUsuario", "Venta")' });
+            $.MisUrls.urls({ _RegistrarVenta: '@Url.Action("Guardar", "Venta")' });
+            $.MisUrls.urls({ _DocumentoVenta: '@Url.Action("Documento", "Venta")' });
+            $.MisUrls.urls({ _ControlarStockProducto: '@Url.Action("ControlarStock", "Venta")' });
+
+            $.MisUrls.urls({ _ObtenerClientes: '@Url.Action("Obtener", "Cliente")' });
+            $.MisUrls.urls({ _GuardarCliente: '@Url.Action("Guardar", "Cliente")' });
+            $.MisUrls.urls({ _ConsultarRuc: '@Url.Action("ConsultarRUC", "Cliente")' });
+            $.MisUrls.urls({ _ConsultarDNI: '@Url.Action("ConsultarDNI", "Cliente")' });
+            $.MisUrls.urls({ _GuardarClienteDireccion: '@Url.Action("GuardarClienteDireccion", "Cliente")' });
+            $.MisUrls.urls({ _ObtenerClienteDireccion: '@Url.Action("ObtenerClienteDireccion", "Cliente")' });
+
+            $.MisUrls.urls({ _CrearPedido: '@Url.Action("Crear", "Pedido")' });
+            $.MisUrls.urls({ _GuardarPedido: '@Url.Action("Guardar", "Pedido")' });
+            $.MisUrls.urls({ _ObtenerPedidos: '@Url.Action("ObtenerPedidosVenta", "Pedido")' });
+            $.MisUrls.urls({ _EliminarPedido: '@Url.Action("Eliminar", "Pedido")' });
+            $.MisUrls.urls({ _DocumentoPedido: '@Url.Action("Documento", "Pedido")' });
+            $.MisUrls.urls({ _ObtenerPedidosVenta: '@Url.Action("Obtener", "Pedido")' });
+            $.MisUrls.urls({ _ObtenerUsuarioPedido: '@Url.Action("ObtenerUsuario", "Pedido")' });
+            $.MisUrls.urls({ _GenerarVentaPedido: '@Url.Action("GenerarVentaPedido", "Pedido")' });
+            $.MisUrls.urls({ _PedidoCrearMobil: '@Url.Action("CrearMobil", "Pedido")' });
+            $.MisUrls.urls({ _DespacharPedido: '@Url.Action("Despachar", "Pedido")' });
+            $.MisUrls.urls({ _AnularPedido: '@Url.Action("Anular", "Pedido")' });
+
+            $.MisUrls.urls({ _ObtenerReporteVenta: '@Url.Action("ObtenerVenta", "Reporte")' });
+            $.MisUrls.urls({ _ObtenerReportePedido: '@Url.Action("ObtenerPedido", "Reporte")' });
+            $.MisUrls.urls({ _ObtenerReporteProducto: '@Url.Action("ObtenerProducto", "Reporte")' });
+
+            $.MisUrls.urls({ _GuardarRuta: '@Url.Action("GuardarRuta", "Rutas")' });
+            $.MisUrls.urls({ _ObtenerRutas: '@Url.Action("ObtenerRutas", "Rutas")' });
+            $.MisUrls.urls({ _ObtenerDetalleRuta: '@Url.Action("ObtenerDetalleRuta", "Rutas")' });
+            $.MisUrls.urls({ _AnularRuta: '@Url.Action("AnularRuta", "Rutas")' });
+            $.MisUrls.urls({ _ObtenerMapaRutas: '@Url.Action("ObtenerMapaPedidos", "Rutas")' });
+
+            $.MisUrls.urls({ _ObtenerResolucionDigesa: '@Url.Action("obtenerResolucion", "Producto")' });
+            $.MisUrls.urls({ _ObtenerGrupoDigesa: '@Url.Action("obtenerGrupoDigesa", "Producto")' });
+            $.MisUrls.urls({ _ObtenerFamiliaDigesa: '@Url.Action("ObtenerGrupoDigesa", "Categoria")' });
+            $.MisUrls.urls({ _GuardarResolucionDigesa: '@Url.Action("GuardarResolucion", "Producto")' });
+            $.MisUrls.urls({ _ObtenerResolucionProductosDigesa: '@Url.Action("obtenerResolucionProductos", "Producto")' });
+            $.MisUrls.urls({
+                Url_datatable_spanish:
+                    '@Url.Content("~/content/plugins/datatables/js/datatable_spanish.json")'
+            });
+
+</script>
+
+    <!-- =========================================
+         MENU
+    ==========================================-->
+
+    <script>
+
+        $(document).ready(function () {
+
+            // ===== ABRIR / CERRAR SUBMENU =====
+
+            $('.nav-item.dropdown > a').on('click', function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                let parent = $(this).parent();
+                let submenu = parent.find('.dropdown-menu').first();
+
+                // cerrar otros
+                $('.nav-item.dropdown').not(parent)
+                    .removeClass('open')
+                    .find('.dropdown-menu')
+                    .slideUp(200);
+
+                // toggle actual
+                if (submenu.is(':visible')) {
+
+                    submenu.slideUp(200);
+                    parent.removeClass('open');
+
+                } else {
+
+                    submenu.slideDown(200);
+                    parent.addClass('open');
+
+                }
+
+            });
+
+
+            // ===== MOSTRAR / OCULTAR SIDEBAR =====
+
+            //$("#btnToggleSidebar").click(function () {
+
+            //    $(".sidebar").toggleClass("sidebar-hide");
+            //    $(".topbar").toggleClass("topbar-full");
+            //    $(".main-content").toggleClass("content-full");
+
+            //});
+
+            $("#btnToggleSidebar").click(function () {
+
+                // MOBILE
+                if ($(window).width() <= 768) {
+
+                    $(".sidebar").toggleClass("sidebar-show");
+
+                }
+                // DESKTOP
+                else {
+
+                    $(".sidebar").toggleClass("sidebar-hide");
+                    $(".topbar").toggleClass("topbar-full");
+                    $(".main-content").toggleClass("content-full");
+
+                }
+
+            });
+
+        });
+
+
+        // ===== ACTIVAR MENU =====
+
+        function activarMenu(menuactivo) {
+
+            var ul = $("ul.navbar-nav");
+
+            ul.find("li.nav-item").each(function (i, li) {
+
+                $(li).removeClass("active");
+
+                if ($(li).find("div.dropdown-menu").length != 0) {
+
+                    var div = $(li).find("div.dropdown-menu");
+
+                    div.find("a.dropdown-item").each(function (x, tagA) {
+
+                        if ($(tagA).attr("name") == menuactivo) {
+
+                            $(li).addClass("active");
+                            $(div).show();
+
+                            return false;
+                        }
+
+                    });
+
+                } else {
+
+                    var a = $(li).find("a.nav-link");
+
+                    if ($(a).attr("name") == menuactivo) {
+
+                        $(li).addClass("active");
+
+                        return false;
+                    }
+                }
+
+            });
+        }
+
+    </script>
+
+     <!-- =========================================
+         SESION
+    ==========================================-->
+     <script>
+
+        $(document).ajaxComplete(function (event, xhr, settings) {
+
+            try {
+
+                // intentar convertir respuesta
+                var response = JSON.parse(xhr.responseText);
+
+                // sesión vencida
+                if (response.sesionExpirada) {
+
+                    alert("La sesión ha expirado");
+
+                    window.location.href = '/Login/Index';
+
+                }
+
+            } catch (e) {
+
+                // no era json válido
+            }
+
+        });
+
+    </script>
+    
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

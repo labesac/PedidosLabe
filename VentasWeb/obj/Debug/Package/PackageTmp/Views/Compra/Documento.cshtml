@@ -1,0 +1,275 @@
+﻿@model CapaModelo.Compra
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ticket Compra</title>
+
+    @Styles.Render("~/Content/PluginsCSS")
+
+    <style>
+
+        body {
+            font-family: Consolas, monospace;
+            font-size: 12px;
+            width: 300px;
+            margin: auto;
+            color: #000;
+        }
+
+        .ticket {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .line {
+            border-top: 1px dashed #000;
+            margin: 6px 0;
+        }
+
+        .titulo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .subtitulo {
+            font-size: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            border-bottom: 1px dashed #000;
+            padding-bottom: 4px;
+            font-size: 11px;
+        }
+
+        td {
+            padding: 3px 0;
+            vertical-align: top;
+            font-size: 11px;
+        }
+
+        .total {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .btn-print {
+            width: 100%;
+            border: none;
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        @@media print {
+
+            .btn-print {
+                display: none;
+            }
+
+            body {
+                width: 80mm;
+                margin: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="btn-print" onclick="imprimirTicket()">
+        🖨 Imprimir
+    </button>
+
+    <div id="ticket" class="ticket">
+
+        <!-- EMPRESA -->
+        <div class="center">
+
+            <div class="titulo">
+                LABE PERÚ S.A.C.
+            </div>
+
+            <div class="subtitulo">
+                labeperu@gmail.com
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <!-- DOCUMENTO -->
+        <div class="center bold">
+            COMPRA
+        </div>
+
+        <div class="center">
+            NRO:
+            @Html.DisplayTextFor(model => model.Codigo)
+        </div>
+
+        <div class="center">
+            FECHA:
+            @Html.DisplayTextFor(model => model.FechaCompra)
+        </div>
+
+        <div class="line"></div>
+
+        <!-- PROVEEDOR -->
+        <table>
+
+            <tr>
+                <td class="bold">PROVEEDOR:</td>
+            </tr>
+
+            <tr>
+                <td>
+                    @Html.DisplayTextFor(model => model.oProveedor.RazonSocial)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    RUC:
+                    @Html.DisplayTextFor(model => model.oProveedor.Ruc)
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="line"></div>
+
+        <!-- TIENDA -->
+        <table>
+
+            <tr>
+                <td class="bold">TIENDA DESTINO:</td>
+            </tr>
+
+            <tr>
+                <td>
+                    @Html.DisplayTextFor(model => model.oTienda.Nombre)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    RUC:
+                    @Html.DisplayTextFor(model => model.oTienda.RUC)
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="line"></div>
+
+        <!-- PRODUCTOS -->
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>CANT</th>
+                    <th>PRODUCTO</th>
+                    <th class="right">TOTAL</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                @foreach (var item in Model.oListaDetalleCompra)
+                {
+                    <tr>
+
+                        <td>
+                            @item.Cantidad
+                        </td>
+
+                        <td>
+                            @item.oProducto.Nombre
+                            <br />
+                            x S/. @item.PrecioUnitarioCompra
+                        </td>
+
+                        <td class="right">
+                            S/. @item.TotalCosto
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+        <div class="line"></div>
+
+        <!-- TOTAL -->
+        <table>
+
+            <tr>
+
+                <td class="total">
+                    TOTAL
+                </td>
+
+                <td class="right total">
+                    S/. @Html.DisplayTextFor(model => model.TotalCosto)
+                </td>
+
+            </tr>
+
+        </table>
+
+        <div class="line"></div>
+
+        <!-- MENSAJE -->
+        <div class="center">
+            Registro de compra generado correctamente
+        </div>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script>
+
+        function imprimirTicket() {
+
+            window.print();
+
+        }
+
+    </script>
+
+</body>
+
+</html>

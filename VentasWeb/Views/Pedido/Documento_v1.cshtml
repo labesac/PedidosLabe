@@ -1,0 +1,525 @@
+﻿@model CapaModelo.Pedido
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Ticket</title>
+
+	@Styles.Render("~/Content/PluginsCSS")
+
+	<style>
+
+		body {
+			font-family: 'Consolas', monospace;
+			font-size: 12px;
+			width: 300px;
+			margin: auto;
+			color: #000;
+			background: #fff;
+		}
+
+		.ticket {
+			width: 100%;
+			padding: 10px;
+			overflow: visible !important;
+			height: auto !important;
+			background: #fff;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.line {
+			border-top: 1px dashed #000;
+			margin: 6px 0;
+		}
+
+		.titulo {
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.subtitulo {
+			font-size: 12px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		th {
+			border-bottom: 1px dashed #000;
+			padding-bottom: 4px;
+			font-size: 11px;
+		}
+
+		td {
+			padding: 3px 0;
+			vertical-align: top;
+			font-size: 11px;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		.total {
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.acciones {
+			display: flex;
+			gap: 10px;
+			margin-bottom: 10px;
+		}
+
+		.btn-print {
+			flex: 1;
+			border: none;
+			background: #000;
+			color: #fff;
+			padding: 10px;
+			cursor: pointer;
+			font-size: 13px;
+			border-radius: 10px;
+		}
+
+		.btn-wsp {
+			flex: 1;
+			border: none;
+			background: linear-gradient(135deg,#25D366,#128C7E);
+			color: #fff;
+			padding: 10px;
+			cursor: pointer;
+			font-size: 13px;
+			font-weight: bold;
+			border-radius: 10px;
+		}
+
+		@@media print {
+
+			.acciones {
+				display: none;
+			}
+
+			body {
+				width: 80mm;
+				margin: 0;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="acciones">
+
+		<button class="btn-print"
+										onclick="imprimirTicket()">
+
+			🖨 Imprimir
+
+		</button>
+
+		<button class="btn-wsp"
+										onclick="compartirTicket()">
+
+			📲 Compartir
+
+		</button>
+
+	</div>
+
+	<div id="ticket" class="ticket">
+
+		<!-- EMPRESA -->
+		<div class="center">
+
+			<div class="titulo">
+				LABE PERÚ S.A.C.
+			</div>
+
+			<div class="subtitulo">
+
+				RUC:
+				@Html.DisplayTextFor(model => model.oTienda.RUC)
+
+			</div>
+
+			<div class="subtitulo">
+
+				@Html.DisplayTextFor(model => model.oTienda.Direccion)
+
+			</div>
+
+			<div class="subtitulo">
+
+				Atendido por:
+				@Html.DisplayTextFor(model => model.oUsuario.Nombres)
+
+			</div>
+
+		</div>
+
+		<div class="line"></div>
+
+		<!-- DOCUMENTO -->
+		<div class="center bold">
+
+			@Html.DisplayTextFor(model => model.TipoDocumento)
+
+		</div>
+
+		<div class="center">
+
+			NRO:
+			@Html.DisplayTextFor(model => model.Codigo)
+
+		</div>
+
+		<div class="line"></div>
+
+		<!-- CLIENTE -->
+		<table>
+
+			<tr>
+
+				<td class="bold">
+					Cliente:
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+					@Html.DisplayTextFor(model => model.oCliente.Nombre)
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					DOC:
+					@Html.DisplayTextFor(model => model.oCliente.NumeroDocumento)
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					TEL:
+					@Html.DisplayTextFor(model => model.oCliente.Telefono)
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					FECHA:
+					@Html.DisplayTextFor(model => model.FechaRegistro)
+
+				</td>
+
+			</tr>
+
+		</table>
+
+		<div class="line"></div>
+
+		<!-- PRODUCTOS -->
+		<table>
+
+			<thead>
+
+				<tr>
+
+					<th>CANT</th>
+
+					<th>PRODUCTO</th>
+
+					<th class="right">
+						TOTAL
+					</th>
+
+				</tr>
+
+			</thead>
+
+			<tbody>
+
+				@foreach (var item in Model.oListaDetallePedido)
+				{
+					<tr>
+
+						<td>
+							@item.Cantidad
+						</td>
+
+						<td>
+
+							@item.NombreProducto
+
+							<br />
+
+							x @item.TextoPrecioUnidad
+
+						</td>
+
+						<td class="right">
+
+							@item.TextoImporteTotal
+
+						</td>
+
+					</tr>
+				}
+
+			</tbody>
+
+		</table>
+
+		<div class="line"></div>
+
+		<!-- PAGOS -->
+		<table>
+
+			<tr>
+
+				<td>
+					SubTotal:
+				</td>
+
+				<td class="right">
+
+					S/. @Html.DisplayTextFor(model => model.TextoImporteRecibido)
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+					Descuento:
+				</td>
+
+				<td class="right">
+
+					S/. @Html.DisplayTextFor(model => model.TextoImporteCambio)
+
+				</td>
+
+			</tr>
+
+		</table>
+
+		<div class="line"></div>
+
+		<!-- TOTAL -->
+		<table>
+
+			<tr>
+
+				<td class="total">
+					TOTAL
+				</td>
+
+				<td class="right total">
+
+					S/. @Html.DisplayTextFor(model => model.TextoTotalCosto)
+
+				</td>
+
+			</tr>
+
+		</table>
+
+		<div class="line"></div>
+
+		<!-- MENSAJE -->
+		<div class="center">
+
+			¡Gracias por su compra!
+
+		</div>
+
+	</div>
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+
+	<!-- HTML2CANVAS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+	<!-- JSPDF -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+	<script>
+
+        function imprimirTicket() {
+
+            window.print();
+
+        }
+
+        async function compartirTicket() {
+
+            try {
+
+                const ticket =
+                    document.getElementById("ticket");
+
+                // GENERAR CANVAS COMPLETO
+                const canvas =
+                    await html2canvas(ticket, {
+
+                        scale: 3,
+
+                        useCORS: true,
+
+                        allowTaint: true,
+
+                        backgroundColor: "#FFFFFF",
+
+                        scrollX: 0,
+
+                        scrollY: 0,
+
+                        windowWidth: ticket.scrollWidth,
+
+                        windowHeight: ticket.scrollHeight
+
+                    });
+
+                const imgData =
+                    canvas.toDataURL(
+                        'image/jpeg',
+                        1.0
+                    );
+
+                // TAMAÑO PDF
+                const pdfWidth = 80;
+
+                const pdfHeight =
+                    (canvas.height * pdfWidth)
+                    / canvas.width;
+
+                // PDF DINAMICO
+                const pdf =
+                    new jspdf.jsPDF({
+
+                        orientation: 'portrait',
+
+                        unit: 'mm',
+
+                        format: [pdfWidth, pdfHeight]
+
+                    });
+
+                pdf.addImage(
+
+                    imgData,
+
+                    'JPEG',
+
+                    0,
+
+                    0,
+
+                    pdfWidth,
+
+                    pdfHeight
+
+                );
+
+                // GENERAR BLOB
+                const pdfBlob =
+                    pdf.output('blob');
+
+                // CREAR ARCHIVO
+                const archivo =
+                    new File(
+
+                        [pdfBlob],
+
+                        'Ticket_@(Model.Codigo).pdf',
+
+                        {
+                            type: 'application/pdf'
+                        }
+
+                    );
+
+                // COMPARTIR PDF
+                if (
+
+                    navigator.canShare &&
+
+                    navigator.canShare({
+                        files: [archivo]
+                    })
+
+                ) {
+
+                    await navigator.share({
+
+                        title: 'Ticket',
+
+                        text: 'Ticket de Atención',
+
+                        files: [archivo]
+
+                    });
+
+                }
+                else {
+
+                    alert(
+                        "Tu dispositivo no soporta compartir archivos."
+                    );
+
+                }
+
+            }
+            catch (error) {
+
+                console.log(error);
+
+                alert(
+                    "Error al generar el PDF."
+                );
+
+            }
+
+        }
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+﻿@{
+    ViewBag.Title = "Consulta Mapa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+	.pin-map {
+		width: 22px;
+		height: 22px;
+		border-radius: 50% 50% 50% 0;
+		transform: rotate(-45deg);
+		border: 2px solid #fff;
+		box-shadow: 0 2px 8px rgba(0,0,0,.35);
+		position: relative;
+	}
+
+		.pin-map::after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			background: white;
+			position: absolute;
+			border-radius: 50%;
+			top: 4px;
+			left: 4px;
+		}
+
+	.blink {
+		animation: pulse 1s infinite;
+	}
+
+	@@keyframes pulse {
+
+		0% {
+			transform: rotate(-45deg) scale(1);
+			opacity: 1;
+		}
+
+		50% {
+			transform: rotate(-45deg) scale(1.25);
+			opacity: .7;
+		}
+
+		100% {
+			transform: rotate(-45deg) scale(1);
+			opacity: 1;
+		}
+	}
+</style>
+
+<div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+
+    <!-- HEADER -->
+    <div class="card-header border-0 text-white py-3 px-4"
+         style="background: linear-gradient(135deg,#0f172a,#1e293b);">
+
+        <div class="d-flex align-items-center justify-content-between">
+
+            <div>
+                <h4 class="mb-0 fw-bold">
+                    <i class="fas fa-route me-2 text-info"></i>
+                    Mapa de Rutas
+                </h4>
+
+                <small class="text-light opacity-75">
+                    Seguimiento visual de pedidos y visitas
+                </small>
+            </div>
+
+            <div class="text-end">
+                <span class="badge bg-info text-dark px-3 py-2 rounded-pill">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Tracking
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="card-body bg-light p-4">
+
+        <!-- FILTROS -->
+        <div class="card border-0 shadow-sm rounded-4 mb-4">
+
+            <div class="card-body">
+
+                <div class="row g-3 align-items-end">
+
+                    <!-- FECHA -->
+                    <div class="col-lg-3 col-md-6">
+
+                        <label class="form-label fw-semibold text-secondary">
+                            <i class="far fa-calendar-alt me-1 text-primary"></i>
+                            Fecha
+                        </label>
+
+                        <div class="input-group shadow-sm">
+
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="fas fa-calendar-day text-primary"></i>
+                            </span>
+
+                            <input type="date"
+                                   id="txtFecha"
+                                   class="form-control border-start-0" />
+
+                        </div>
+
+                    </div>
+
+                    <!-- VENDEDOR -->
+                    <div class="col-lg-5 col-md-6">
+
+                        <label class="form-label fw-semibold text-secondary">
+                            <i class="fas fa-user-tie me-1 text-success"></i>
+                            Vendedor
+                        </label>
+
+                        <div class="input-group shadow-sm">
+
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="fas fa-users text-success"></i>
+                            </span>
+
+                            <select id="cboVendedor"
+                                    class="form-control border-start-0">
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BOTON -->
+                    <div class="col-lg-2 col-md-12">
+
+                        <button id="btnBuscar"
+                                class="btn btn-primary w-100 rounded-3 shadow-sm fw-semibold"
+                                style="height:48px;">
+
+                            <i class="fas fa-search me-2"></i>
+                            Buscar
+
+                        </button>
+
+                    </div>
+
+                    <!-- ESTADO -->
+                    <div class="col-lg-2 d-none d-lg-block">
+
+                        <div class="bg-white border rounded-3 shadow-sm p-2 text-center">
+
+                            <div class="small text-muted">
+                                Estado
+                            </div>
+
+                            <div class="fw-bold text-success">
+                                En Línea
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MAPA -->
+        <div class="position-relative">
+
+            <div class="position-absolute top-0 start-0 m-3"
+                 style="z-index:999;">
+
+                <div class="bg-white shadow rounded-pill px-3 py-2 small fw-semibold">
+
+                    <span class="text-success">
+                        <i class="fas fa-circle"></i>
+                        Entregados
+                    </span>
+
+                    &nbsp;&nbsp;
+
+                    <span class="text-primary">
+                        <i class="fas fa-circle"></i>
+                        Pendientes
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div id="map"
+                 class="shadow rounded-4 border border-2 border-light"
+                 style="height:700px;background:#f8fafc;">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section scripts{
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="@Url.Content("~/Scripts/Views/Rutas_ConsultarMapa.js")" type="text/javascript"></script>
+
+}

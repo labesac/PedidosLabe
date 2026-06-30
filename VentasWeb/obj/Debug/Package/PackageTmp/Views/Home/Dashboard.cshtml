@@ -1,0 +1,739 @@
+﻿@{
+    ViewBag.Title = "Dashboard Ejecutivo";
+}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<style>
+
+    body {
+        background: #f4f6f9;
+    }
+
+    .dashboard-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #111827;
+    }
+
+    .dashboard-subtitle {
+        color: #6b7280;
+        font-size: 14px;
+    }
+
+    .card-kpi {
+        border: none;
+        border-radius: 18px;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,.05);
+        transition: .2s ease;
+        height: 100%;
+    }
+
+        .card-kpi:hover {
+            transform: translateY(-2px);
+        }
+
+    .kpi-title {
+        color: #6b7280;
+        font-size: 13px;
+        margin-bottom: 6px;
+        font-weight: 500;
+    }
+
+    .kpi-value {
+        font-size: 26px;
+        font-weight: 700;
+        color: #111827;
+        line-height: 1.1;
+        letter-spacing: -.5px;
+    }
+
+    .kpi-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .bg-blue {
+        background: rgba(59,130,246,.12);
+        color: #2563eb;
+    }
+
+    .bg-green {
+        background: rgba(16,185,129,.12);
+        color: #059669;
+    }
+
+    .bg-orange {
+        background: rgba(245,158,11,.12);
+        color: #d97706;
+    }
+
+    .bg-purple {
+        background: rgba(139,92,246,.12);
+        color: #7c3aed;
+    }
+
+    .card-dashboard {
+        background: #fff;
+        border: none;
+        border-radius: 18px;
+        box-shadow: 0 4px 20px rgba(0,0,0,.05);
+        overflow: hidden;
+    }
+
+    .card-header-clean {
+        padding: 18px 22px;
+        border-bottom: 1px solid #f1f1f1;
+        font-size: 16px;
+        font-weight: 600;
+        color: #111827;
+    }
+
+    .card-body-clean {
+        padding: 20px;
+    }
+
+    .table thead th {
+        border-top: 0;
+        font-size: 13px;
+        color: #6b7280;
+        font-weight: 600;
+    }
+
+    .table tbody td {
+        vertical-align: middle;
+    }
+
+    .badge-pendiente {
+        background: #fef3c7;
+        color: #92400e;
+        padding: 7px 12px;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+    .badge-facturado {
+        background: #cffafe;
+        color: #0e7490;
+        padding: 7px 12px;
+        border-radius: 30px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .badge-anulado {
+        background: #f8d7da;
+        color: #721c24;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .badge-entregado {
+        background: #dcfce7;
+        color: #166534;
+        padding: 7px 12px;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+    #map {
+        border-radius: 14px;
+    }
+</style>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <div>
+
+        <div class="dashboard-title">
+            Dashboard Ejecutivo
+        </div>
+
+        <div class="dashboard-subtitle">
+            Resumen comercial y operativo
+        </div>
+
+    </div>
+
+</div>
+
+<!-- KPI -->
+
+<div class="row">
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card-kpi">
+
+            <div class="d-flex justify-content-between align-items-start">
+
+                <div>
+
+                    <div class="kpi-title">
+                        Pedidos Hoy
+                    </div>
+
+                    <div class="kpi-value" id="pedidos-hoy">
+                        S/ 0.00
+                    </div>
+
+                </div>
+
+                <div class="kpi-icon bg-blue">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card-kpi">
+
+            <div class="d-flex justify-content-between align-items-start">
+
+                <div>
+
+                    <div class="kpi-title">
+                        Pedidos Mes
+                    </div>
+
+                    <div class="kpi-value" id="pedidos-mes">
+                        S/ 0.00
+                    </div>
+
+                </div>
+
+                <div class="kpi-icon bg-orange">
+                    <i class="fa fa-chart-bar"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card-kpi">
+
+            <div class="d-flex justify-content-between align-items-start">
+
+                <div>
+
+                    <div class="kpi-title">
+                        Ventas Hoy
+                    </div>
+
+                    <div class="kpi-value" id="ventas-hoy">
+                        S/ 0.00
+                    </div>
+
+                </div>
+
+                <div class="kpi-icon bg-green">
+                    <i class="fa fa-dollar-sign"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <div class="card-kpi">
+
+            <div class="d-flex justify-content-between align-items-start">
+
+                <div>
+
+                    <div class="kpi-title">
+                        Ventas Mes
+                    </div>
+
+                    <div class="kpi-value" id="ventas-mes">
+                        S/ 0.00
+                    </div>
+
+                </div>
+
+                <div class="kpi-icon bg-purple">
+                    <i class="fa fa-wallet"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- GRAFICOS -->
+
+<div class="row">
+
+    <div class="col-lg-6 mb-4">
+
+        <div class="card-dashboard">
+
+            <div class="card-header-clean">
+                Pedidos por mes
+            </div>
+
+            <div class="card-body-clean">
+                <canvas id="graficoPedidos"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-6 mb-4">
+
+        <div class="card-dashboard">
+
+            <div class="card-header-clean">
+                Ventas por mes
+            </div>
+
+            <div class="card-body-clean">
+                <canvas id="graficoVentas"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MAPA -->
+
+<div class="card-dashboard mb-4">
+
+    <div class="card-header-clean">
+        Mapa de pedidos del día
+    </div>
+
+    <div class="card-body-clean">
+
+        <div id="map" style="height:350px;"></div>
+
+    </div>
+
+</div>
+
+<!-- TABLAS -->
+
+<div class="row">
+
+    <div class="col-lg-6 mb-4">
+
+        <div class="card-dashboard h-100">
+
+            <div class="card-header-clean">
+                Top productos mas pedidos
+            </div>
+
+            <div class="card-body-clean">
+
+                <table class="table table-hover">
+
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th class="text-center">Cantidad</th>
+                            <th class="text-end">Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="top-productos"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-6 mb-4">
+
+        <div class="card-dashboard h-100">
+
+            <div class="card-header-clean">
+                Productos con stock bajo
+            </div>
+
+            <div class="card-body-clean">
+
+                <table class="table table-hover">
+
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th class="text-center">Stock</th>
+                            <th class="text-end">Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="stock-bajo"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ULTIMOS PEDIDOS -->
+
+<div class="card-dashboard mb-4">
+
+    <div class="card-header-clean">
+        Últimos pedidos
+    </div>
+
+    <div class="card-body-clean">
+
+        <table class="table table-hover">
+
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Cliente</th>
+                    <th>Vendedor</th>
+                    <th class="text-end">Total</th>
+                    <th class="text-end">Descuento</th>
+                    <th>Estado</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+
+            <tbody id="ultimos-pedidos"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+@section scripts{
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+
+    $(document).ready(function () {
+
+        $.ajax({
+
+            url: '@Url.Action("DashboardPanel","Home")',
+            type: "GET",
+
+            success: function (response) {
+
+                let data = response.data;
+
+                const moneda = {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                };
+
+                // KPI
+
+                $("#pedidos-hoy").text(
+                    "S/ " + Number(data.TotalPedidosHoy || 0)
+                        .toLocaleString('es-PE', moneda)
+                );
+
+                $("#pedidos-mes").text(
+                    "S/ " + Number(data.TotalPedidosMes || 0)
+                        .toLocaleString('es-PE', moneda)
+                );
+
+                $("#ventas-hoy").text(
+                    "S/ " + Number(data.TotalVentasHoy || 0)
+                        .toLocaleString('es-PE', moneda)
+                );
+
+                $("#ventas-mes").text(
+                    "S/ " + Number(data.TotalVentasMes || 0)
+                        .toLocaleString('es-PE', moneda)
+                );
+
+                // TOP PRODUCTOS
+
+                let htmlTop = "";
+
+                data.TopProductos.forEach(x => {
+
+                    htmlTop += `
+                        <tr>
+
+                            <td>${x.Producto}</td>
+
+                            <td class="text-center">
+                                ${x.Cantidad}
+                            </td>
+
+                            <td class="text-end">
+                                S/ ${Number(x.Total || 0)
+                                    .toLocaleString('es-PE', moneda)}
+                            </td>
+
+                        </tr>
+                    `;
+                });
+
+                $("#top-productos").html(htmlTop);
+
+                // STOCK BAJO
+
+                let htmlStock = "";
+
+                data.StockBajo.forEach(x => {
+
+                    htmlStock += `
+                        <tr>
+
+                            <td>${x.Nombre}</td>
+
+                            <td class="text-center">
+
+                                <span class="badge bg-danger">
+                                    ${x.StockDisponible}
+                                </span>
+
+                            </td>
+
+                            <td class="text-end">
+                                S/ ${Number(x.PrecioUnidadVenta || 0)
+                                    .toLocaleString('es-PE', moneda)}
+                            </td>
+
+                        </tr>
+                    `;
+                });
+
+                $("#stock-bajo").html(htmlStock);
+
+                // ULTIMOS PEDIDOS
+
+                let htmlPedidos = "";
+
+                data.UltimosPedidos.forEach(x => {
+
+                    let badge = '';
+
+                    if (x.Estado == "Pendiente") {
+
+                        badge = `
+                            <span class="badge-pendiente">
+                                Pendiente
+                            </span>
+                        `;
+                    }
+                    else if (x.Estado == "Facturado") {
+
+                        badge = `
+                            <span class="badge-facturado">
+                                Facturado
+                            </span>
+                        `;
+                    }
+                    else if (x.Estado == "Anulado") {
+
+                        badge = `
+                            <span class="badge-anulado">
+                                Anulado
+                            </span>
+                        `;
+                    }
+                    else {
+
+                        badge = `
+                            <span class="badge-entregado">
+                                Entregado
+                            </span>
+                        `;
+                    }
+
+                    htmlPedidos += `
+                        <tr>
+
+                            <td>${x.Codigo}</td>
+                            <td>${x.Contacto}</td>
+                            <td>${x.Vendedor}</td>
+                            <td class="text-end">
+                                S/ ${Number(x.Total || 0)
+                                    .toLocaleString('es-PE', moneda)}
+                            </td>
+
+                            <td class="text-end">
+                                S/ ${Number(x.DescuentoImporte || 0)
+                                    .toLocaleString('es-PE', moneda)}
+                            </td>
+
+                            <td>${badge}</td>
+
+                            <td>${x.FechaRegistroTexto}</td>
+
+                        </tr>
+                    `;
+                });
+
+                $("#ultimos-pedidos").html(htmlPedidos);
+
+                // GRAFICO PEDIDOS
+
+                let labelsPedidos = [];
+                let valoresPedidos = [];
+
+                data.PedidosPorMes.forEach(x => {
+
+                    labelsPedidos.push(x.NombreMes);
+                    valoresPedidos.push(x.Total);
+
+                });
+
+                new Chart(document.getElementById("graficoPedidos"), {
+
+                    type: 'bar',
+
+                    data: {
+                        labels: labelsPedidos,
+                        datasets: [{
+                            label: 'Pedidos',
+                            data: valoresPedidos,
+                            borderRadius: 8
+                        }]
+                    },
+
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+
+                });
+
+                // GRAFICO VENTAS
+
+                let labelsVentas = [];
+                let valoresVentas = [];
+
+                data.VentasPorMes.forEach(x => {
+
+                    labelsVentas.push(x.NombreMes);
+                    valoresVentas.push(x.Total);
+
+                });
+
+                new Chart(document.getElementById("graficoVentas"), {
+
+                    type: 'line',
+
+                    data: {
+                        labels: labelsVentas,
+                        datasets: [{
+                            label: 'Ventas',
+                            data: valoresVentas,
+                            tension: 0.4
+                        }]
+                    },
+
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+
+                });
+
+                // MAPA
+
+                var map = L.map('map');
+
+                L.tileLayer(
+                    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    {
+                        attribution: '&copy; OpenStreetMap'
+                    }
+                ).addTo(map);
+
+                var markers = [];
+
+                data.MapaPedidos.forEach(x => {
+
+                    if (x.Latitud && x.Longitud) {
+
+                        var marker = L.marker([x.Latitud, x.Longitud])
+                            .addTo(map)
+                            .bindPopup(`
+                                <b>${x.Codigo}</b><br>
+                                Total: S/ ${Number(x.Total || 0)
+                                    .toLocaleString('es-PE', moneda)}
+                            `);
+
+                        markers.push(marker);
+                    }
+
+                });
+
+                if (markers.length > 0) {
+
+                    var group = L.featureGroup(markers);
+                    map.fitBounds(group.getBounds());
+
+                }
+                else {
+
+                    map.setView([-12.16, -76.97], 13);
+
+                }
+
+                setTimeout(function () {
+                    map.invalidateSize();
+                }, 300);
+
+            },
+
+            error: function (xhr) {
+
+                console.log(xhr.responseText);
+
+            }
+
+        });
+
+    });
+
+    </script>
+
+}

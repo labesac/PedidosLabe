@@ -1,0 +1,186 @@
+﻿
+@{
+    ViewBag.Title = "Resolución DIGESA";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="card">
+
+    <div class="card-header">
+        Resolución DIGESA
+    </div>
+
+    <div class="card-body">
+
+        <button class="btn btn-primary mb-3" onclick="abrirModal()">
+            Nueva Resolución
+        </button>
+
+        <table id="tbdata" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Grupo</th>
+                    <th>Resolución</th>
+                    <th>Fecha Emisión</th>
+                    <th>Inicio</th>
+                    <th>Vencimiento</th>
+                    <th>Estado</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="modalResolucion" tabindex="-1" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+
+            <!-- HEADER -->
+            <div class="modal-header bg-primary text-white">
+
+                <div>
+                    <h5 class="modal-title mb-0">
+                        <i class="fas fa-file-signature me-2"></i>
+                        Resolución DIGESA
+                    </h5>
+
+                    <small class="opacity-75">
+                        Registro y control de autorizaciones sanitarias
+                    </small>
+                </div>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <!-- BODY -->
+            <div class="modal-body p-4">
+
+                <div class="row g-3">
+
+                    <!-- GRUPO -->
+                    <div class="col-md-6">
+
+                        <label class="form-label fw-bold">
+                            Grupo DIGESA
+                        </label>
+
+                        <select id="cboGrupoDigesa" class="form-select">
+                        </select>
+
+                    </div>
+
+                    <!-- RESOLUCION -->
+                    <div class="col-md-6">
+
+                        <label class="form-label fw-bold">
+                            Número Resolución
+                        </label>
+
+                        <input type="text"
+                               id="txtNumeroResolucion"
+                               class="form-control"
+                               placeholder="Ej: 1212-2025/DCEA/DIGESA/SA" />
+
+                    </div>
+
+                    <!-- FECHA EMISION -->
+                    <div class="col-md-4">
+
+                        <label class="form-label fw-bold">
+                            Fecha Emisión
+                        </label>
+
+                        <input type="date"
+                               id="txtFechaEmision"
+                               class="form-control" />
+
+                    </div>
+
+                    <!-- FECHA INICIO -->
+                    <div class="col-md-4">
+
+                        <label class="form-label fw-bold">
+                            Fecha Inicio
+                        </label>
+
+                        <input type="date"
+                               id="txtFechaInicio"
+                               class="form-control" />
+
+                    </div>
+
+                    <!-- FECHA VENCIMIENTO -->
+                    <div class="col-md-4">
+
+                        <label class="form-label fw-bold">
+                            Fecha Vencimiento
+                        </label>
+
+                        <input type="date"
+                               id="txtFechaVencimiento"
+                               class="form-control border-warning" />
+
+                    </div>
+
+                    <!-- PDF -->
+                    <div class="col-md-12">
+
+                        <label class="form-label fw-bold">
+                            Archivo PDF
+                        </label>
+
+                        <div class="border rounded p-3 bg-light">
+
+                            <input type="file"
+                                   id="filePdf"
+                                   class="form-control"
+                                   accept="application/pdf" />
+
+                            <small class="text-muted">
+                                Adjunte resolución DIGESA en formato PDF
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <div class="modal-footer bg-light">
+
+                <button type="button"
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal">
+
+                    <i class="fas fa-times me-1"></i>
+                    Cerrar
+
+                </button>
+
+                <button class="btn btn-success px-4"
+                        onclick="guardar()">
+
+                    <i class="fas fa-save me-1"></i>
+                    Guardar
+
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+    <script src="@Url.Content("~/Scripts/Views/Producto_Resolucion.js?v=" + DateTime.Now.Ticks)" type="text/javascript"></script>
+}

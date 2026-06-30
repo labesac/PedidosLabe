@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Productos DIGESA";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+				#tbdata tbody td {
+					border: 0 !important;
+					padding: 2px !important;
+					background: transparent !important;
+				}
+
+				#tbdata {
+					border-collapse: separate !important;
+					border-spacing: 0 4px !important;
+				}
+
+					#tbdata .card {
+						border-radius: 8px !important;
+					}
+
+					#tbdata .card-body {
+						padding: 10px !important;
+						font-size: 12px;
+					}
+
+					#tbdata .badge {
+						font-size: 10px;
+						padding: 4px 6px;
+					}
+
+					#tbdata hr {
+						margin: 6px 0 !important;
+					}
+
+					#tbdata .text-muted {
+						font-size: 11px;
+					}
+
+					#tbdata .fw-bold {
+						line-height: 1.1;
+					}
+</style>
+
+<div class="card">
+
+    <div class="card-header">
+        Productos DIGESA
+    </div>
+
+    <div class="card-body">
+
+        @*<table id="tbdata" class="table table-bordered table-striped">
+            <thead>
+               <tr>
+                   <th>Producto</th>
+                   <th>Grupo DIGESA</th>
+                   <th>Resolución</th>
+                   <th>Fecha Inicio</th>
+                   <th>Fecha Vencimiento</th>
+                   <th>Estado</th>
+                   <th>Tiempo Restante</th>
+               </tr>
+            </thead>
+        </table>*@
+
+        <table id="tbdata" class="table table-borderless w-100">
+            <thead style="display:none;">
+                <tr>
+                    <th>Tarjeta</th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+
+</div>
+
+@section scripts{
+
+    <script src="@Url.Content("~/Scripts/Views/Producto_Digesa.js?v=" + DateTime.Now.Ticks)" type="text/javascript"></script>
+}

@@ -1,0 +1,12 @@
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\bin\Release\CapaModelo.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\bin\Release\CapaModelo.pdb
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.csproj.AssemblyReference.cache
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.pdb
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\bin\Release\CapaModelo.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\bin\Release\CapaModelo.pdb
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.csproj.AssemblyReference.cache
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\CapaModelo\obj\Release\CapaModelo.pdb

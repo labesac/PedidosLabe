@@ -1,0 +1,522 @@
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csprojAssemblyReference.cache
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.CoreCompileInputs.cache
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll.config
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\VentasWeb.pdb
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe.config
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\csc.rsp
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe.config
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\csi.rsp
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.AppContext.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Console.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Compression.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.AccessControl.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Claims.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Principal.Windows.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.ValueTuple.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe.config
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.rsp
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\CapaDatos.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\CapaModelo.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\WebGrease.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\CapaDatos.pdb
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\CapaModelo.pdb
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.pdb
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\es\System.Web.Helpers.resources.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\es\System.Web.Mvc.resources.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\es\System.Web.Optimization.resources.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\es\System.Web.Razor.resources.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.resources.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.CopyComplete
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.dll
+D:\WorkSpaceAD\YOUTUBE\022_FUNCIONALIDAD SISTEMA DE VENTA MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.pdb
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll.config
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.pdb
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe.config
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.rsp
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe.config
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.rsp
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.AppContext.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Console.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Claims.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe.config
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.rsp
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\WebGrease.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.pdb
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.pdb
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.pdb
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.AssemblyReference.cache
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.CoreCompileInputs.cache
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.Up2Date
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.dll
+C:\Users\GABRIELA\Downloads\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.pdb
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll.config
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.pdb
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe.config
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.rsp
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe.config
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.rsp
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.AppContext.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Console.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Compression.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.AccessControl.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Claims.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.ValueTuple.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe.config
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.rsp
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\WebGrease.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.pdb
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.pdb
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.pdb
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Helpers.resources.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Razor.resources.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.AssemblyReference.cache
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.CoreCompileInputs.cache
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.Up2Date
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.dll
+C:\Proy_evaluacion\WEB-VENTAS-main\WEB-VENTAS-main\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.pdb
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll.config
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.pdb
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe.config
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.rsp
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe.config
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.rsp
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.AppContext.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Console.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Compression.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.AccessControl.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Claims.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.ValueTuple.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe.config
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.rsp
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\WebGrease.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.pdb
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.pdb
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.pdb
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Helpers.resources.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Razor.resources.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.AssemblyReference.cache
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.CoreCompileInputs.cache
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.Up2Date
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.dll
+C:\Proy_LPERU\WEB-VENTAS-LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.pdb
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll.config
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.pdb
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe.config
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.rsp
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe.config
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.rsp
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.AppContext.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Console.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Compression.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.AccessControl.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Claims.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.ValueTuple.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe.config
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.rsp
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\WebGrease.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.pdb
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.pdb
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.pdb
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Helpers.resources.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Mvc.resources.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Optimization.resources.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Razor.resources.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.resources.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.AssemblyReference.cache
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.CoreCompileInputs.cache
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.Up2Date
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.dll
+D:\Data\Proy_LABE\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.pdb
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll.config
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\VentasWeb.pdb
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.exe.config
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csc.rsp
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.exe.config
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\csi.rsp
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.AppContext.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Console.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Compression.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.IO.Pipes.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.AccessControl.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Claims.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.ValueTuple.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.exe.config
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\vbc.rsp
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\WebGrease.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaDatos.pdb
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\CapaModelo.pdb
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Newtonsoft.Json.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Helpers.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Mvc.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Optimization.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.Razor.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\System.Web.WebPages.Razor.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Antlr3.Runtime.pdb
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Helpers.resources.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.Razor.resources.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.AssemblyReference.cache
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.CoreCompileInputs.cache
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csproj.Up2Date
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.dll
+C:\Proy_LPERU\022_VENTAS_WEB_MVC\VentasWeb\VentasWeb\obj\Debug\VentasWeb.pdb

@@ -1,0 +1,131 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    @Styles.Render("~/Content/css")
+
+    <style>
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f3f4f6 !important;
+        }
+
+        .login-container {
+            min-height: 100vh;
+        }
+
+        .login-card {
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .logo-login {
+            height: 90px;
+            object-fit: contain;
+        }
+
+        .form-control {
+            height: 48px;
+            border-radius: 10px;
+            border: 1px solid #d9d9d9;
+            box-shadow: none !important;
+            transition: all .2s ease;
+        }
+
+            .form-control:focus {
+                border-color: #1677ff;
+            }
+
+        .btn-login {
+            height: 48px;
+            border-radius: 10px;
+            font-weight: 600;
+            width: 100%;
+        }
+
+            .btn-login:hover {
+                background: #0958d9;
+            }
+
+        .text-label {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container login-container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-7 col-lg-5">
+                <div class="card login-card">
+                    <div class="card-body p-4 p-md-5">
+
+                        <!-- LOGO -->
+                        <div class="text-center mb-4">
+                            <a href="#">
+                                <img src="@Url.Content("~/Imagenes/labeperu.png")"
+                                     class="logo-login" />
+                            </a>
+                        </div>
+
+                        <!-- FORM -->
+                        <form action="@Url.Content("~/Login/Index")"
+                              method="post"
+                              autocomplete="off">
+
+                            <!-- CORREO -->
+                            <div class="form-group mb-3">
+                                <label class="text-label">
+                                    Correo electrónico
+                                </label>
+                                <input class="form-control"
+                                       type="text"
+                                       name="correo"
+                                       placeholder="Indica tu Usuario"
+                                       required>
+                            </div>
+
+                            <!-- PASSWORD -->
+                            <div class="form-group mb-3">
+                                <label class="text-label">
+                                    Contraseña
+                                </label>
+                                <input class="form-control"
+                                       type="password"
+                                       name="clave"
+                                       placeholder="Escribe tu Contraseña"
+                                       required>
+                            </div>
+
+                            <!-- BUTTON -->
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-login w-100"
+                                        type="submit">
+                                    Ingresar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
